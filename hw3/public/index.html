@@ -1,0 +1,129 @@
+<!---------------------------
+ --- Author @Eduardo Gonon
+ --- Date: January 15, 2026
+ --- Class: CS341
+ --- Assignment: HW_01
+ ----------------------------
+ --- The purpose of this assignment is to create an html website
+ that looks exactly like the image in the hw. Then I'll implement a 
+ CSS file that will make the webpage look more appealing to the eyes
+ --------------------------->
+
+ <!-- JQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+
+<!-- Modification 1 & 2: Form Validation & A Hover Dropdown Menu -->
+<script src="javascripts/CS341_Gonon_HW3.js" > </script>
+
+
+
+</body>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS341_Gonon_HW01</title>
+
+    <!-- Linking the CSS for more features -->
+    <link rel="stylesheet" href="stylesheets/CS341_Gonon_HW2.css">
+
+</head>
+
+<!-- The title and image of the page -->
+
+<body>
+    <h1> <!--- h1 is very important for SEO -->
+        Cheesecake Order Form
+    </h1>
+
+    <img src="https://littlerock.com.mt/wp-content/uploads/2014/10/cheesecake.jpg"
+        alt="THis is an image of a CHEESECAKE" width="300" height="300">
+</body>
+
+<div id="order-form-container">
+
+    <p>
+        Quantity Topping
+    <p>
+
+        <!-- Simple Table to arrange datacells-->
+        <!-- Source: https://www.w3schools.com/tags/tag_table.asp -->
+    <table cellpadding="5">
+        <tr>
+            <td>
+                <!-- The Quantity Topping chooser -->
+                <select id="cake_option">
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+            </td>
+            <td></td>
+            <td>
+                <!-- Source: https://www.w3schools.com/tags/tag_input.asp -->
+                <form action="/action_page.php">
+                    <input type="radio" id="Plain" name="fav_topping" value="Plain">
+                    <label for="Plain">Plain</label><br>
+                    <input type="radio" id="Cherry" name="fav_topping" value="Cherry">
+                    <label for="Cherry">Cherry</label><br>
+                    <input type="radio" id="Chocolate" name="fav_topping" value="Chocolate">
+                    <label for="Chocolate">Chocolate</label>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <!--- textarea for notes -->
+    <!-- Source: https://www.w3schools.com/tags/tag_textarea.asp-->
+    <form action="/action_page.php">
+        <label for="Notes:">Notes:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50">Enter any special instructions here.
+    </textarea>
+    </form>
+
+
+
+    <button id="order-button">
+        Order
+    </button>
+
+</div>
+
+
+<!-- -->
+<h3>
+    Orders for
+    <div class="dropdown">
+        <span id="month-display" class="dropbtn">Jan</span>
+
+        <div class="dropdown-content">
+            <a href="#" class="month-option">Jan</a>
+            <a href="#" class="month-option">Feb</a>
+            <a href="#" class="month-option">Mar</a>
+            <a href="#" class="month-option">Apr</a>
+            <a href="#" class="month-option">May</a>
+            <a href="#" class="month-option">Jun</a>
+            <a href="#" class="month-option">Jul</a>
+            <a href="#" class="month-option">Aug</a>
+            <a href="#" class="month-option">Sep</a>
+            <a href="#" class="month-option">Oct</a>
+            <a href="#" class="month-option">Nov</a>
+            <a href="#" class="month-option">Dec</a>
+        </div>
+    </div>
+</h3>
+
+
+
+<ul>
+    <li>11 cherry</li>
+    <li>17 chocolate</li>
+    <li>31 plain</li>
+</ul>
+
+</body>
+
+</html>

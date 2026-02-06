@@ -1,0 +1,87 @@
+/*
+ --- Author @Eduardo Gonon
+ --- Date: January 15, 2026
+ --- Class: CS341
+ --- Assignment: HW_01
+ ----------------------------
+ --- The purpose of this assignment is to create an html website
+ that looks exactly like the image in the hw. Then I'll implement a 
+ CSS file that will make the webpage look more appealing to the eyes
+ ----------------------------
+*/
+
+/* Portion of page is turquoise & different font */
+body {
+  background-color: turquoise;
+  font-size: 20px;
+}
+
+/* Another portion of page is pink & different font from body */
+h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Garamount', serif;
+  background-color: #cb1dab;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Another font for paragraph just in case */
+p {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 30px;}
+
+  .vertical-menu {
+  width: 200px; /* Set a width if you like */
+}
+
+
+/* Source: https://www.w3schools.com/howto/howto_css_dropdown.asp */
+/* Below is for HW2 */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+
+/* Drop down menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* Requirement: Vertical scrollbar for 12 months */
+    height: 150px;
+    overflow-y: scroll; 
+}
+
+/* Highlights the month */
+.dropbtn {
+    background-color: yellow;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+/* Does the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styling the individual month links */
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+/* Change background color on hover of a month */
+.dropdown-content a:hover {
+    background-color: rgb(160, 160, 160);
+}
